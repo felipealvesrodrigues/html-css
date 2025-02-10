@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------------
+pequenas telas: max-width: 600px
+celular: min-width: 600px
+tablet: min-width: 768px
+Desktop: min-width: 992px
+TV: min-width: 1200px
+*/
+
+@media screen and (min-width: 992px) {
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu ul li {
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    menu ul li a {
+        border-radius: 6px;
+    }
+
+    main {
+        width: 768px;
+    }
+}
