@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+        }
+
+        div.itens {
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: 2;
+        }
+
+        div#i2 {
+            order: -2;
+        }
+
+        div#i3 {
+            order: 0;
+        }
+
+        div#i4 {
+            order: 4;
+        }
+
+        div#i5 {
+            order: 8;
+        }
+
+        div#i6 {
+            order: 0; 
+        }
+
+        div#i7 {
+            order: -4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="i1">A</div>
+        <div class="itens" id="i2">B</div>
+        <div class="itens" id="i3">C</div>
+        <div class="itens" id="i4">D</div>
+        <div class="itens" id="i5">E</div>
+        <div class="itens" id="i6">F</div> <!-- ficou em último pq os outros são 0 e -3 -->
+        <div class="itens" id="i7">G</div>
+    </div>
+</body>
+</html>
