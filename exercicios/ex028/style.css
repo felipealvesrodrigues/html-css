@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: ;
+}
+
+.item {
+   background-color: aqua;
+   padding: 34px;
+   margin: 20px;
+}
