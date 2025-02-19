@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    
+    body {
+        font-size: 1em;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.24);
+    
+    }
+    
+    header {
+        background-color: rgb(92, 91, 91);
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    header nav {
+        /*border: 1px dotted black;*/
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-flow: row nowrap;
+            
+    }
+
+    header h1 {
+        /*border: 1px dotted black;*/
+        color: white;
+        flex-basis: 200px;
+    }
+
+    header nav a {
+        background-color: black;
+        padding: 10px;
+        
+        margin: 5px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        flex-wrap: wrap;
+        border-radius: 7px;
+    }
+    
+    header nav a:hover {
+        background-color: white;
+        color: black;
+        transition-duration: .3s;
+    }
+
+    main {
+        background-color: white;
+    
+        margin: 10px;
+        padding: 10px;
+    
+        border-radius: 10px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.212);
+    
+    } 
+    
+    main h2 {
+        text-align: center;
+        padding: 5px;
+    }
+
+
+
+
+
+
+    #burger {
+        display: none;
+    }
+}
