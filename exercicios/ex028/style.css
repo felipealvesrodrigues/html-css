@@ -7,12 +7,48 @@
 
 #container {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: ;
+
+
+
+
+    /* grid-template-areas: Essa coisa vaidar nomes às regiões, igual esta ai em baixo. Perceba a posição dos nomes que eu dei, vai ficar basicamente nesse formato ai quando ir para o site. 'Header Header' vai ocupar duas colunas pq eu botei dois, um do lado do outro, a Sidebar vai ocupar somente uma, igual ao article. O article, eu coloquei um em baixo do outro, um ao lado da sidebar e um ao lado da section, isso significa que eles vai ocupar duas linhas, e não duas colunas 
+    'header header'
+    'aside article'
+    'section article'
+    'footer footer'
+    ; */
+
+    /* grid-template-areas:
+    'header header header'
+    'aside article section'
+    'footer footer footer'
+    ; 
+    
+    da pra fzr assim tbm, aí fica com 3 colunas só*/
+    gap: 10px;   
+    
+} 
+
+header {
+    background-color: purple;
+    
 }
 
-.item {
-   background-color: aqua;
-   padding: 34px;
-   margin: 20px;
+aside {
+    background-color: blue;
+    grid-row: 1;
 }
+
+article {
+    background-color: red;
+}
+
+section {
+    background-color: yellow;
+}
+
+footer {
+    background-color: gray;
+}
+
+
