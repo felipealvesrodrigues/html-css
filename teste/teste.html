@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste com animação inline</title>
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 30px;
+        }
+
+        #textolado {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            pointer-events: none;
+        }
+
+        #textolado.mostrar {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        img {
+            cursor: pointer;
+            width: 100px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Testando imagem + texto com animação inline</h1>
+    <p>Clique na imagem abaixo:</p>
+
+    <div id="container">
+        <img src="https://via.placeholder.com/100" alt="Logo HTML5" onclick="clickImagem()">
+        <div id="textolado">
+            <p id="p1">Texto aparece com animação usando estilo direto!</p>
+        </div>
+    </div>
+
+    <script>
+        function clickImagem() {
+            const texto = document.getElementById('textolado');
+            
+            if (texto.classList.contains('mostrar')) {
+                texto.classList.remove('mostrar');
+            } else {
+                texto.classList.add('mostrar');
+            }
+        }
+    </script>
+
+</body>
+</html>

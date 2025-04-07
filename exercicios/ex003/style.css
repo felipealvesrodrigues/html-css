@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#container {
+    display: flex;
+    align-items:  center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/*classe padrão que vai estar sempre ativa*/
+#textolado {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity .5s ease, transform .5s ease;
+    pointer-events: none;
+}
+
+/*quando eu apertar na imagem, a classe do paragrafo vai ter alterada pra essa aq*/
+#textolado.mostrar {
+    opacity: 1;
+    transform: translateX(0px);
+    pointer-events: auto;
+}
+
+.imgHTML {
+    cursor: pointer;
+}

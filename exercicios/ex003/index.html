@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste com imagens</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Testando carga de imagens</h1>
     <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
-    <a href="pag02.html"><img src="logo-html.png" alt="Logo HTML5" ></a>
-    <p>Podemos também carregar imagens que  estão em sub-pastas.</p>
+    <div id="container">
+        <img src="logo-html.png" alt="Logo HTML5" onclick="clickImagem()" class="imgHTML"> 
+        <div id="textolado">
+            <p id="p1">Podemos também carregar imagens que  estão em sub-pastas.</p>
+        </div> 
+    </div> 
+    <br>
     <img src="imagens/logo-css.png" alt="logo CSS3">
     <p>Também podemos carregar imagens externas.</p>
     <img src="https://www.shareicon.net/data/128x128/2016/07/06/106573_software_512x512.png" alt="Logo JavaScript"> <!--URL-->
+
+    <script>
+        function clickImagem() {
+            const texto = document.getElementById('textolado')
+
+            if (texto.classList.contains('mostrar')) {
+                texto.classList.remove('mostrar')
+            } else {
+                texto.classList.add('mostrar')
+            }
+            
+        }
+    </script>
 </body>
 </html>
