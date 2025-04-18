@@ -9,6 +9,9 @@
 
 /*classe padrão que vai estar sempre ativa*/
 #textolado {
+    background-color: gray;
+    border-radius: 8px;
+    border: solid 2px red;
     opacity: 0;
     transform: translateX(20px);
     transition: opacity .5s ease, transform .5s ease;
